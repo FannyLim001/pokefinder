@@ -1,0 +1,138 @@
+// Import all of Bootstrap's CSS
+@import "bootstrap/scss/bootstrap";
+@import url("https://fonts.googleapis.com/css2?family=Paytone+One&family=Poppins:wght@600;700&display=swap");
+
+body {
+	font-family: "Poppins", sans-serif;
+	background-color: #414141;
+	color: #98dfa4 !important;
+
+	.navbar-brand {
+		color: #98dfa4;
+		font-family: "Paytone One", sans-serif;
+	}
+
+	.nav-link {
+		color: #98dfa4;
+	}
+
+	.title {
+		margin-top: 70px;
+
+		h1 {
+			font-size: 70px;
+			font-weight: bold;
+		}
+	}
+
+	.text p {
+		color: #82bb8c;
+		font-size: 25px;
+	}
+
+	.search-bar {
+		.form-control {
+			background-color: transparent;
+			color: #98dfa4;
+			border: 3px solid #98dfa4;
+		}
+
+		input::placeholder {
+			color: #98dfa4;
+		}
+	}
+
+	.card {
+		background-color: transparent;
+		border: 0px;
+		.card-body {
+			a {
+				text-decoration: none;
+				color: #98dfa4;
+				font-size: 20px;
+			}
+			p {
+				color: #82bb8c;
+			}
+		}
+	}
+
+	.modal-content {
+		background-color: #414141;
+		border: 1px solid #98dfa4;
+
+		.modal-header {
+			border-bottom: 1px solid #98dfa4;
+
+			.modal-title {
+				color: #98dfa4;
+			}
+		}
+
+		.modal-body {
+			color: #98dfa4;
+		}
+
+		.modal-footer {
+			border-top: 1px solid #98dfa4;
+
+			.btn {
+				background-color: #98dfa4;
+				color: #414141;
+			}
+		}
+	}
+
+	@include media-breakpoint-down(sm) {
+		.title {
+			padding-left: 10px;
+			h1 {
+				font-size: 40px;
+			}
+		}
+
+		.text p {
+			padding-left: 10px;
+			font-size: 15px;
+		}
+	}
+	@include media-breakpoint-down(md) {
+		.title {
+			padding-left: 20px;
+			h1 {
+				font-size: 55px;
+			}
+		}
+
+		.text p {
+			padding-left: 20px;
+			font-size: 20px;
+		}
+	}
+	@include media-breakpoint-down(lg) {
+		.title {
+			padding-left: 20px;
+			h1 {
+				font-size: 60px;
+			}
+		}
+
+		.text p {
+			padding-left: 20px;
+			font-size: 20px;
+		}
+	}
+	@include media-breakpoint-down(xl) {
+		.title {
+			margin-top: 50px;
+
+			h1 {
+				font-size: 55px;
+			}
+		}
+
+		.text p {
+			font-size: 20px;
+		}
+	}
+}
